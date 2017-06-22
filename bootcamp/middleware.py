@@ -16,7 +16,7 @@ class DjangoMetrics(object):
     def __init__(self, get_response):
         #need to override WSGI response handler
         #original verison has assert failure due to new string type
-        #BaseHandler.start_response = start_resp
+        BaseHandler.start_response = start_resp
         self.get_response = get_response
         # One-time configuration and initialization.
 
