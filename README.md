@@ -1,8 +1,8 @@
 # DjangoMetrics
 
-This project is an open source demo of a middleware service in the Django web framework. It utilizes the open source Django project bootcamp[0] as it's base.
+This project is an open source demo of a middleware service in the Django web framework. It utilizes the open source Django project [bootcamp][0] as it's base.
 
-The middleware[1] has three basic features:
+The [middleware][1] has three basic features:
 
 * Detect how many string objects are created per page request \*
 * Time each page request from start to finish
