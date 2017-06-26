@@ -21,6 +21,9 @@ class DjangoMetrics(object):
         # One-time configuration and initialization.
 
     def __call__(self, request):
+        if request.path == "/login" or request.path == "/signup/":
+            response = self.get_response(request)
+            return response
         global str_count
         str_count = 0
         #save the original string implementation to be reset later
