@@ -1,3 +1,5 @@
+PATH    |   LOAD TIME(SECONDS)   |   MEMORY(BYTES)    |   STRINGS CREATED
+
 /articles/,0.069682,1826816,83
 /notifications/check/,0.058275,176128,16
 /messages/check/,0.037045,229376,16
