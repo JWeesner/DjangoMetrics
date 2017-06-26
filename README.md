@@ -10,6 +10,8 @@ The [middleware][1] has three basic features:
 
 \* string count is currently disabled for signup and login tasks
 
+Page request logs can be found in the root directory's requests.log file and metrics can be found in the root directory's metrics.log file. In order to turn on DjangoMetrics simply run "python manage.py metrics" instead of the usual "python manage.py runserver".
+
 
 ## Installation Guide
 
