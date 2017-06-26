@@ -1,6 +1,6 @@
 # DjangoMetrics
 
-This project is an open source demo of a middleware service in the Django web framework. It utilizes the open source Django project [bootcamp][0] as it's base.
+This project is an open source demo of a middleware service in the Django web framework. It utilizes the open source Django project [bootcamp][0] as its base.
 
 The [middleware][1] has three basic features:
 
