@@ -3,6 +3,7 @@ from datetime import datetime
 from types import StringType
 from wsgiref.util import is_hop_by_hop
 from wsgiref.handlers import BaseHandler
+from django.conf import settings
 
 str_count = 0
 
@@ -21,7 +22,7 @@ class DjangoMetrics(object):
         # One-time configuration and initialization.
 
     def __call__(self, request):
-        if request.path == "/login" or request.path == "/signup/":
+        if request.path == "/login" or request.path == "/signup/" or not settings.METRICS:
             response = self.get_response(request)
             return response
         global str_count
