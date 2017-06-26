@@ -1,48 +1,21 @@
-# Bootcamp
+# DjangoMetrics
 
-[![Build Status](https://travis-ci.org/vitorfs/bootcamp.svg?branch=master)](https://travis-ci.org/vitorfs/bootcamp) [![Coverage Status](https://coveralls.io/repos/github/vitorfs/bootcamp/badge.svg?branch=master)](https://coveralls.io/github/vitorfs/bootcamp?branch=master) [![Requirements Status](https://requires.io/github/vitorfs/bootcamp/requirements.svg?branch=master)](https://requires.io/github/vitorfs/bootcamp/requirements/?branch=master)
+This project is an open source demo of a middleware service in the Django web framework. It utilizes the open source Django project bootcamp[0] as it's base.
 
-Bootcamp is an open source **enterprise social network** built with [Python][0] using the [Django Web Framework][1].
+The middleware[1] has three basic features:
 
-The project has three basic apps:
+* Detect how many string objects are created per page request \*
+* Time each page request from start to finish
+* Provide a brief overview of memory utilization per page request
 
-* Feed (A Twitter-like microblog)
-* Articles (A collaborative blog)
-* Question & Answers (A Stack Overflow-like platform)
-
-## Feed App
-
-The Feed app has infinite scrolling, activity notifications, live updates for likes and comments, and comment tracking.
-
-
-## Articles App
-
-The Articles app is a basic blog, with articles pagination, tag filtering and draft management.
-
-
-## Question & Answers App
-
-The Q&A app works just like Stack Overflow. You can mark a question as favorite, vote up or vote down answers, accept an answer and so on.
-
-
-## Technology Stack
-
-- Python 2.7 / 3.5
-- Django > 1.9
-- Twitter Bootstrap 3
-- jQuery 2
+\* string count is currently disabled for signup and login tasks
 
 
 ## Installation Guide
 
-Take a look at our wiki page for a detailed [installation guide][3].
+[Detailed installation guide][2].
 
 
-## Demo
-
-Try Bootcamp now at [http://trybootcamp.vitorfs.com][2].
-
-[0]: https://www.python.org/
-[1]: https://www.djangoproject.com/
-[2]: http://trybootcamp.vitorfs.com/
-[3]: https://github.com/JWeesner/DjangoMetrics/wiki/Bootcamp-install
+[0]: https://www.github.com/vitorfs/bootcamp.git
+[1]: https://github.com/JWeesner/DjangoMetrics/blob/master/bootcamp/middleware.py
+[2]: https://github.com/JWeesner/DjangoMetrics/wiki/Bootcamp-install
